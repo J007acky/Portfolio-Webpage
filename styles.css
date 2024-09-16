@@ -79,7 +79,8 @@ nav li {
 
 nav li:hover {
     text-decoration: underline;
-    text-indent: 3px;
+    transform: translate(-5px);
+    font-size: 25px;
 }
 
 main {
@@ -92,7 +93,6 @@ main {
 
 article {
     line-height: 2em;
-    font-size: large;
     color: #6b4d00;
 }
 
@@ -110,7 +110,31 @@ footer {
     letter-spacing: 0.5px;
     text-decoration: underline;
 }
+@media (max-width:700px){
 
-.content {
-    color: aqua;
+    .hello {
+        font-size: 0.5em;
+    }
+    nav li {
+        font-size: 12px;
+    }
+    nav li:hover {
+        transform: translate(-1px);
+        font-size: 15px;
+    }
+    header {
+        padding: 5px;
+    }
+    
+    header h1 {
+        border: 2px solid white;
+        padding: 2px 3px;
+        font-size: 15px;
+    }
+    #content{
+        font-size: 13px;
+    }
+    footer{
+        font-size: 14px;
+    }
 }
